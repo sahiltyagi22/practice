@@ -1,0 +1,18 @@
+    var n = 6;
+    var a = [ 3, 6, 2, 8, 9, 2 ];
+    var pf = Array(n+2).fill(0);
+    pf[0] = 0;
+    for (i = 0; i < n; i++) {
+        pf[i+1] = pf[i] + a[i];
+          
+    }
+    
+    let q = [ [ 2, 3 ], [ 4, 6 ], [ 1, 5 ], [ 3, 6 ]]
+
+    for(let i=0; i<q.length; i++){
+        let l = q[i][0]
+        let r = q[i][1]
+
+        console.log(pf[r] - pf[l-1]);
+    }
+
