@@ -8,6 +8,7 @@
 function twoSum(arr, n ,k){
     for(let i=0; i<n; i++){
         for(j=i+1; j<n; j++){
+
             if(arr[i] == arr[j]){
                 continue
             }
@@ -46,7 +47,12 @@ function twoSum(arr, n,k){
 
     while(low<high){
         if(arr[low] +arr[high] == k){
-            return "yes"
+            if(arr[low] !== arr[high]){
+                return "yes"
+            }else{
+                high--
+            }
+           
         }else if(arr[low] +arr[high] < k){
             low++
         }else{
@@ -56,7 +62,7 @@ function twoSum(arr, n,k){
     return "no"
 }
 
-let arr = [1,2,3,4,5]
+let arr = [1,2,3,4]
 let n = arr.length
 let k = 9
 

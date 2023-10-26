@@ -35,7 +35,7 @@ function longestSequence(arr,n){
 let arr = [3,2,8,9,5,4,1,2]
 let n = arr.length
 
-// console.log(longestSequence(arr,n));
+console.log(longestSequence(arr,n));
 
 /**
  * Better approach

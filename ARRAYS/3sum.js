@@ -40,36 +40,36 @@
  */
 
 
-// function triplet(arr,n){
-//  let ans =[]
+function triplet(arr,n){
+ let ans =[]
 
-//  for(let i=0; i<n; i++){
-//     let hashSet = new Set()
-//     for(let j=i+1; j<n; j++){
-//         let third = -(arr[i] + arr[j])
+ for(let i=0; i<n; i++){
+    let hashSet = new Set()
+    for(let j=i+1; j<n; j++){
+        let third = -(arr[i] + arr[j])
 
-//         if(hashSet.has(third)){
-//             let temp = [arr[i] , arr[j] , third]
-//                 temp.sort((a,b)=> a-b)
+        if(hashSet.has(third)){
+            let temp = [arr[i] , arr[j] , third]
+                temp.sort((a,b)=> a-b)
 
-//                 ans.push(temp)
-//             }
+                ans.push(temp)
+            }
 
-//             hashSet.add(arr[j])
-//         }
-//     }
+            hashSet.add(arr[j])
+        }
+    }
 
-//     let set = new Set(ans.map(JSON.stringify))
-//     ans = Array.from(set).map(JSON.parse)
+    let set = new Set(ans.map(JSON.stringify))
+    ans = Array.from(set).map(JSON.parse)
 
-//     return ans
-//  }
+    return ans
+ }
 
 
 
-// let arr = [-1, 0, 1, 2, -1, -4];
-// let n = arr.length;
-// console.log(triplet(arr, n));
+let arr1 = [-1, 0, 1, 2, -1, -4];
+let n1= arr1.length;
+console.log(triplet(arr1, n1));
 
 
 /**
