@@ -30,3 +30,36 @@ function height(root){
 }
 
 console.log(height(root));
+
+
+//  By level order
+
+function heightOfTree(root){
+    if(root === null) return 0
+
+    let queue = []
+    queue.push(root)
+
+    let curr = root
+    let height = 0
+
+    while(queue.length >0){
+        let size = queue.length
+
+        while(size-- >0){
+            let currentNode = queue.shift()
+
+            if(currentNode.left!==null){
+                queue.push(currentNode.left)
+            }
+            if(currentNode.right!==null){
+                queue.push(currentNode.right)
+            }
+        }
+        height++
+    }
+    return height
+}
+
+let result = heightOfTree(root)
+console.log(result);

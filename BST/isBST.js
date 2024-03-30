@@ -52,3 +52,17 @@ function isBST(root , min , max){
 let min  = Number.MAX_SAFE_INTEGER
 let max = Number.MAX_SAFE_INTEGER
 console.log(isBST(root));
+
+function ifTrue(root) {
+    if (root === null) return true;
+
+    if (root.left !== null && root.left.data >= root.data || root.right !== null && root.right.data <= root.data) {
+        return false;
+    }
+
+    return ifTrue(root.left) && ifTrue(root.right);
+}
+
+
+let result = ifTrue(root)
+console.log(result);

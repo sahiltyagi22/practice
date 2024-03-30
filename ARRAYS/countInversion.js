@@ -24,22 +24,20 @@ function inversion(arr,n){
     let count = 0
     if(n===0 || n===1) return count
 
-
     for(let i=0; i<n; i++){
-        let left = i
-        let right = i+1
+        let point = i+1
 
-        while(right < n-1){
-            if(arr[left] > arr[right]) {
-            count++
-                right++
-             } else{
-                right++
+        while(point < n){
+            if(arr[i] > arr[point]){
+                count++
+                point++
+            }else{
+                point++
             }
         }
-        }
-        return count
     }
+    return count
+}
 
 let arr  = [2,1,4,5,0]
 let n  = arr.length

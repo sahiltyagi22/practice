@@ -5,27 +5,59 @@
  * BRUTE FORCE
  */
 function findElement(arr,n){
+
+    let result = []
     for(let i=0; i<n; i++){
         let num  = arr[i]
-        count = 0
-
+        let flag = false
         for(let j=0; j<n; j++){
-            if(arr[j] ==  num){
-                count++
+            if(i===j){
+                continue
+            }else{
+                if(arr[j] ==  num){
+                    flag = true
+                }
             }
+          
         }
 
-        if(count == 1) return num
+        if(flag === false){
+            result.push(arr[i])
+        }
     }
+
+    return result
 }
 
-let arr = [1,1,2,3,3,4,4]
-let n = arr.length
+// let arr = [2,5,1,7,3,2,1]
+// let n = arr.length
 
-console.log(findElement(arr,n));
+// console.log(findElement(arr,n));
 
 
 /**
  * Better Approach
  */
 
+//  we can sort the array and then we can check
+
+function find(arr, n){
+    if(n=== 0) return 'array is empty'
+    if(n===1) return arr
+
+    arr.sort((a,b)=>a-b)
+
+    let result = []
+
+    for(let i=0; i<n; i++){
+        if(arr[i]!==arr[i-1] || arr[i]!==arr[i+1]){
+            result.push(arr[i])
+        }
+    }
+    return result
+}
+
+let arr = [3,1,4,6,6,7,7,8,3]
+let n = arr.length
+
+console.log(findElement(arr,n));

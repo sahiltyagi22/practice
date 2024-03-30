@@ -32,4 +32,4 @@ function check(root){
     return 1+Math.max(leftHeight , rightHeight)
 }
 
-console.log(check(root));
+console.log(check(root)); 

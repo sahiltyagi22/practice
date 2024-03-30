@@ -8,7 +8,6 @@
  *  Brute Force  ===> linera search (run a for loop search for the min element  ans then return its index)
  */
 
-
 /**
  * Optimal approach ===> Binary search
  */

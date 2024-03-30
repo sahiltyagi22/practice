@@ -70,7 +70,7 @@ function subArray2(arr,n,k){
     while(right < n){
         while(left <=right && sum >k){
             sum -= arr[left]
-            left--
+            left++
         }
         let count = 0
         if(sum ===k){

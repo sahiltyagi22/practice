@@ -56,7 +56,7 @@ function rightBoundary(root, result){
             rightBoundary(root.right , result)
         }else if(root.left!==null){
             result.push(root.data)
-            rightBoundary(root.leaf , result)
+            rightBoundary(root.left , result)
         }
     }
 }
@@ -73,8 +73,9 @@ function leafNodes(root, result){
 
 console.log(boundaryTraversal(root));
 
-// ClockWise 
 
+
+// ClockWise 
 function printBoundaryClockWise(root){
     let result = []
     if(root!==null){

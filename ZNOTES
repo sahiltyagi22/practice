@@ -1,0 +1,38 @@
+IMPORTANT PATTERNS 
+ 
+https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
+
+1.Sliding window 
+-Maximum sum subarray of size K (easy)
+-Longest substring with K distinct characters (medium)
+-String anagrams (hard)
+
+
+2.Two Pointers
+-Squaring a sorted array (easy)
+-Triplets that sum to zero (medium)
+-Comparing strings that contain backspaces (medium)
+
+
+3.Fast and Slow Pointers (hare and tortoise approach)
+-cycle in linked list 
+-middle of link list 
+
+
+4.merge intervals
+-learn the intervals patterns
+
+
+5.Cycle Sort Pattern 
+-Find the Missing Number (easy)
+-Find the Smallest Missing Positive Number (medium)
+
+
+6.Inplace reverse of a linked list 
+- reverse k subset of a list 
+
+
+7.Tree BFS
+
+
+8.Tree DFS

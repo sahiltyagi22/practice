@@ -29,8 +29,9 @@ class BST {
         ans = root.data;
         return ans;
       }
-      if (key > root.data) {
-        ans = root.data;
+      
+      if(key > root.data) {
+        ans = root.data; 
         root = root.right;
       } else {
         root = root.left;

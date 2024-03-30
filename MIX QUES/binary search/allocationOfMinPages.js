@@ -19,10 +19,10 @@ function pages(arr,page){
 
   for(let i=0; i<n; i++){
     if(noPages + arr[i] <= page){
-        noPages += arr[i]
+        noPages += arr[i]oPages = arr[i]
     }else{
         student++
-        noPages = arr[i]
+        n
     }
   }
   return student

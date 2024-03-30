@@ -37,3 +37,30 @@ function helperFunction(root, result) {
 }
 
 console.log(maximumPathSum(root));
+
+
+class Solution{
+    constructor(){
+        this.sum = 0
+    }
+
+    maximumSum(root){
+        this.maxSum(root)
+        return this.sum
+    }
+
+    maxSum(root){
+        if(root === null) return 0
+
+       const leftSum = Math.max(0, this.maxSum(root.left))
+       const rightSum = Math.max(0, this.maxSum(root.right))
+
+       this.sum = Math.max(this.sum , leftSum+rightSum+root.data)
+
+       return Math.max(leftSum , rightSum) +root.data
+    }
+}
+
+const solution = new Solution()
+let result = solution.maximumSum(root)
+console.log(result);

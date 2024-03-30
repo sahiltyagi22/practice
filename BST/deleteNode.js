@@ -48,8 +48,9 @@ function deleteNode(root , key){
 
 
         root.data = findMinValue(root.right)
+        console.log(root.data);
 
-        root.right = deleteNode(root.right , root.value)
+        root.right = deleteNode(root.right , root.data)
     }
 
     return root
@@ -65,3 +66,5 @@ function findMinValue(root){
 }
 
 console.log(deleteNode(root , 40));
+
+

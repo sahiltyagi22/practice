@@ -74,3 +74,34 @@ function findDiameter(root) {
 }
 
 console.log(findDiameter(root));
+
+
+
+// easy solution
+
+class Solution{
+  constructor(){
+    this.diameter = 0
+  }
+
+  treeDiameter(root){
+    this.height(root)
+    return this.diameter
+  }
+
+  height(root){
+    if(root===null) return 0
+
+    let leftHeight = height(root.left)
+    let rightHeight = height(root.right)
+
+    this.diameter = Math.max(this.diameter , leftHeight+rightHeight)
+
+    return  1 +  Math.max(leftHeight , rightHeight)
+
+  }
+}
+
+const solution = new Solution()
+let result = solution.treeDiameter(root)
+console.log(result);

@@ -42,7 +42,7 @@ for(let i=0; i<m+n; i++){
     }
 }
 
-return [arr1, arr2]
+return  arr1.concat(arr2)
 }
 
 // let arr1 = [1, 4, 8, 10];
