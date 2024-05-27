@@ -60,6 +60,8 @@ function better(arr,n){
     for(let end = 0; end<n; end++){
         let fruit = arr[end]
 
+        console.log(map);
+
         if(map.has(fruit)){
             map.set(fruit , map.get(fruit)+1)
         }else{
@@ -77,7 +79,7 @@ function better(arr,n){
 }
 
 function main(){
-    let arr = [1,2,3,4,5]
+    let arr = [1,2,3,2,2,4,4,4,5,5,5]
     let n = arr.length 
 
     let result = better(arr,n)

@@ -55,7 +55,7 @@ function validParenthesis(str){
     return true
 }
 
-let str = ' )[ { } ( ) ]('
+let str = '(){}'
 
 let result = validParenthesis(str)
 console.log(result);

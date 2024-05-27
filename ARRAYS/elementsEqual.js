@@ -20,7 +20,7 @@ function equal(arr,n){
 }
 
 function main(){
-    let arr = [4, 6]
+    let arr = [4, 6,6,3,6,5,3]
     let n = arr.length 
 
     let result = equal(arr,n)

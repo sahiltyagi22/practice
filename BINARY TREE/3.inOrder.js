@@ -14,22 +14,18 @@ root.left.right= new Node(5)
 root.right.right= new Node(6)
 
 
-
-
-
-
 function inOrder(root){
     if(root === null){
-        return 
+        return " "
     }
 
-   
+   let ans = ""
 
-    inOrder(root.left)
-   console.log(root.data);
-    inOrder(root.right)
+   ans+= inOrder(root.left)
+   ans+=(root.data);
+   ans+= inOrder(root.right)
 
-  
+  return ans
 }
 
-(inOrder(root))
+console.log((inOrder(root)))

@@ -12,7 +12,7 @@ function spiral(matrix) {
     let startCol = 0;
     let endCol = columns - 1;
 
-    let count = 0;
+    let count = 0; 
     let total = rows * columns;
 
     while (count < total) {

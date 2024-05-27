@@ -32,7 +32,7 @@ class Graph {
     let ans = [];
 
     while (queue.length > 0) {
-      let currentVertex = queue.shift();
+      let currentVertex = queue.shift() ;
       ans.push(currentVertex);
 
       this.list[currentVertex].forEach((neighbor) => {

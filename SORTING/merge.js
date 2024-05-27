@@ -34,7 +34,7 @@ function mergeSort(arr, low, high) {
     if (low >= high) return;
     const mid = Math.floor((low + high) / 2);
     mergeSort(arr, low, mid);
-    mergeSort(arr, mid + 1, high);
+    mergeSort(arr, mid + 1, high); 
 
     return merge(arr, low, mid, high);
     

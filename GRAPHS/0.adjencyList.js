@@ -1,6 +1,6 @@
 class Graph{
     constructor(){
-        this.list = {}
+        this.list = []
     }
 
     addVertex(vertex){

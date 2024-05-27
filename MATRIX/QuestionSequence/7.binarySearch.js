@@ -26,7 +26,7 @@ function binary(matrix, target){
 
 
 function main(){
-    let matrix = [[1,2,3], [4,5,6], [7,8,9]]
+    let matrix = [[ ], [4,5,6], [7,8,9]]
     let target = 5
 
     let result = binary(matrix, target)

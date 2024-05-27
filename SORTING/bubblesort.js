@@ -12,7 +12,7 @@ function bubble(arr,n){
     return arr
 }
 
-let arr = [1,2,3,4,5]
+let arr = [3,1,4,5,2]
 let n = arr.length
 
 console.log(bubble(arr , n));
